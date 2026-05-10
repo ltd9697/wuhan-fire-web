@@ -11,7 +11,7 @@ SEARCH_TERMS = ["fire safety", "fire extinguisher"]
 
 # 动态获取宿主机 IP
 try:
-    host_ip = subprocess.check_output("ip route | awk '/default/ {print $3}'", shell=True).decode('utf-8').strip()
+    host_ip = "192.168.100.9"
     proxies = {
         "http": f"http://{host_ip}:7897",
         "https": f"http://{host_ip}:7897"
