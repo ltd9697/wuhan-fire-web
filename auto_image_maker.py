@@ -3,16 +3,26 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 import random
 import datetime
+import subprocess
 
 # Pexels API Key
 PEXELS_API_KEY = "4siZxCxKkFWzh2Fr2nxAHL5s54J37ZGzf4akGIBjiylrGP03T6DB2DjT"
 SEARCH_TERMS = ["fire safety", "fire extinguisher"]
 
-# 代理配置
-proxies = {
-    "http": "http://127.0.0.1:7897",
-    "https": "http://127.0.0.1:7897"
-}
+# 动态获取宿主机 IP
+try:
+    host_ip = subprocess.check_output("ip route | awk '/default/ {print $3}'", shell=True).decode('utf-8').strip()
+    proxies = {
+        "http": f"http://{host_ip}:7897",
+        "https": f"http://{host_ip}:7897"
+    }
+    print(f"检测到宿主机 IP: {host_ip}，代理配置已就绪。")
+except Exception as e:
+    print(f"无法获取宿主机 IP，使用本地代理: {e}")
+    proxies = {
+        "http": "http://127.0.0.1:7897",
+        "https": "http://127.0.0.1:7897"
+    }
 
 def download_image(url, save_path):
     """下载图片"""
