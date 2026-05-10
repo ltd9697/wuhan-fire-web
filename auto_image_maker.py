@@ -8,10 +8,16 @@ import datetime
 PEXELS_API_KEY = "4siZxCxKkFWzh2Fr2nxAHL5s54J37ZGzf4akGIBjiylrGP03T6DB2DjT"
 SEARCH_TERMS = ["fire safety", "fire extinguisher"]
 
+# 代理配置
+proxies = {
+    "http": "http://127.0.0.1:7897",
+    "https": "http://127.0.0.1:7897"
+}
+
 def download_image(url, save_path):
     """下载图片"""
     headers = {"Authorization": PEXELS_API_KEY}
-    response = requests.get(url, headers=headers, stream=True)
+    response = requests.get(url, headers=headers, stream=True, proxies=proxies, verify=False)
     if response.status_code == 200:
         with open(save_path, 'wb') as f:
             for chunk in response.iter_content(1024):
@@ -71,7 +77,7 @@ def get_pexels_image():
     # 调用 Pexels API
     url = f"https://api.pexels.com/v1/search?query={search_term}&per_page=15&orientation=landscape"
     headers = {"Authorization": PEXELS_API_KEY}
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, proxies=proxies, verify=False)
 
     if response.status_code == 200:
         data = response.json()
