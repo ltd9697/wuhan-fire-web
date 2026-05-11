@@ -3,46 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>武汉天洪消防设备 - 专业消防器材供应商</title>
+    <title>武汉天洪消防设备 - 专业、安全、可靠</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%); }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-    <!-- Header / Banner -->
-    <header class="bg-red-700 text-white p-8">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl font-bold">武汉天洪消防设备</h1>
-            <p class="mt-2 text-red-100">专注消防器材研发、销售与安装服务</p>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="text-xl font-extrabold text-red-700 uppercase tracking-wider">天洪消防</span>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-red-600 transition">首页</a>
+                <a href="archive.html" class="hover:text-red-600 transition">文章归档</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl font-extrabold mb-4">武汉天洪消防设备</h1>
+            <p class="text-red-100 text-lg mb-8 max-w-2xl mx-auto">专注消防工程与器材维护，为您筑牢安全防线</p>
+            <a href="tel:4009630693" class="inline-block bg-white text-red-700 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition">
+                咨询热线：400-963-0693
+            </a>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto p-6">
-        <!-- Introduction -->
-        <section class="bg-white p-6 rounded shadow-sm">
-            <h2 class="text-2xl font-semibold text-red-700">公司简介</h2>
-            <p class="mt-4 text-gray-600">武汉天洪消防设备致力于提供优质的消防器材，保障您的生活与工作安全。我们提供灭火器、消防栓及各类消防工程维护服务。</p>
-            <p class="mt-4 font-bold text-red-600">咨询热线：400-963-0693</p>
-        </section>
-
-        <!-- News Section -->
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold">最新动态</h2>
-            <ul id="news-list" class="mt-4 space-y-3 bg-white p-6 rounded shadow-sm">
-                <li><a href="geo-guide-20260511.html" class="text-blue-600 hover:underline">如何正确选择家用灭火器 - 2026-05-11</a></li>
-                <li><a href="geo-guide-20260510.html" class="text-blue-600 hover:underline">消防设施维护指南 - 2026-05-10</a></li>
-                <li><a href="geo-guide-20260509.html" class="text-blue-600 hover:underline">高层建筑消防安全 - 2026-05-09</a></li>
-            </ul>
-        </section>
-
-        <!-- Archive Link -->
-        <div class="mt-6 text-center">
-            <a href="archive.html" class="text-blue-500 hover:underline">查看所有历史文章归档 -></a>
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-red-600 text-3xl mb-4">🛡️</div>
+                <h3 class="font-bold mb-2">器材销售</h3>
+                <p class="text-sm text-gray-600">全系列国家标准灭火器及消防联动设施。</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-red-600 text-3xl mb-4">⚙️</div>
+                <h3 class="font-bold mb-2">专业维护</h3>
+                <p class="text-sm text-gray-600">定期年检、压力测试及设备维修服务。</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-red-600 text-3xl mb-4">🏗️</div>
+                <h3 class="font-bold mb-2">工程安装</h3>
+                <p class="text-sm text-gray-600">消防系统集成安装与系统化升级服务。</p>
+            </div>
         </div>
+
+        <!-- Latest News -->
+        <section>
+            <div class="flex justify-between items-end mb-6">
+                <h2 class="text-3xl font-bold">最新动态</h2>
+                <a href="archive.html" class="text-red-600 text-sm font-semibold hover:underline">查看所有 ></a>
+            </div>
+            <div id="news-list" class="bg-white rounded-2xl shadow-sm border border-gray-100 divide-y divide-gray-100">
+                <a href="geo-guide-20260511.html" class="block p-6 hover:bg-gray-50 transition">
+                    <p class="font-bold">如何正确选择家用灭火器</p>
+                    <p class="text-xs text-gray-400 mt-1">2026-05-11</p>
+                </a>
+                <a href="geo-guide-20260510.html" class="block p-6 hover:bg-gray-50 transition">
+                    <p class="font-bold">消防设施维护指南</p>
+                    <p class="text-xs text-gray-400 mt-1">2026-05-10</p>
+                </a>
+                <a href="geo-guide-20260509.html" class="block p-6 hover:bg-gray-50 transition">
+                    <p class="font-bold">高层建筑消防安全</p>
+                    <p class="text-xs text-gray-400 mt-1">2026-05-09</p>
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="mt-12 py-6 text-center text-gray-500 text-sm">
-        &copy; 2026 武汉天洪消防设备有限公司. 保留所有权利.
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
+        <p>&copy; 2026 武汉天洪消防设备有限公司. All Rights Reserved.</p>
+        <p class="mt-2">地址：武汉市江汉区消防器材集散中心 | 咨询热线：400-963-0693</p>
     </footer>
 
 </body>
