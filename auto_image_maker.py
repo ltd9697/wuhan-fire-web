@@ -112,7 +112,7 @@ def get_pexels_image():
 
                 # 添加水印
                 output_path = image_path
-                add_watermark(image_path, "武汉天洪消防设备 - 119hb.com.cn", output_path)
+                add_watermark(image_path, "武汉天洪消防设备 - 4009630693", output_path)
 
                 return output_path
             else:

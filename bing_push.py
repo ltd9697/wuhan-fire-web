@@ -8,11 +8,11 @@ def push_to_bing():
     # 在实际环境中，需要替换为您的 API Key
     
     api_url = 'https://api.indexnow.org/indexnow'
-    site_url = 'https://www.119hb.com.cn'
+    site_url = 'https://www.4009630693'
     key = 'DD555841B105EE7F28CDD603B49531D9' # 可以在这里使用之前设置的验证码
     
     data = {
-        "host": "www.119hb.com.cn",
+        "host": "www.4009630693",
         "key": key,
         "keyLocation": f"{site_url}/{key}.txt",
         "urlList": [

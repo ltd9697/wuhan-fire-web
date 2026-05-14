@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 def push_to_baidu():
     sitemap_path = 'sitemap.xml'
-    api_url = 'http://data.zz.baidu.com/urls?site=https://www.119hb.com.cn&token=zAPJ9tnQwLWooTKw'
+    api_url = 'http://data.zz.baidu.com/urls?site=https://www.4009630693&token=zAPJ9tnQwLWooTKw'
     
     try:
         # 解析 sitemap.xml
