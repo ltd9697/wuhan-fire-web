@@ -1,0 +1,1 @@
+git commit -am 'ui refresh and move old news to archive' && git push
