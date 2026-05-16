@@ -13,6 +13,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>http://www.4009630693/news_20260516.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>http://www.4009630693/geo-guide-20260508.html</loc>
         <lastmod>2026-05-10</lastmod>
         <changefreq>monthly</changefreq>
